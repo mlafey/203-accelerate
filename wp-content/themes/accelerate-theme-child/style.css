@@ -35,11 +35,12 @@ Text Domain:  accelerate-theme-child
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+	margin: 2em 0 .5em;
+	text-align: start;
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .read-more-link {
@@ -49,3 +50,98 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+/* FEATURED WORK SECTION */
+
+h4 {
+		font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+		color: #a6a6a6;
+		text-transform: uppercase;
+		text-align: center;
+}
+
+a {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+ul.homepage-featured-work {
+	list-style: none;
+	margin: 0;
+}
+
+li.individual-featured-work {
+	display: block;
+	float: left;
+	padding-right: .75em;
+	text-align: center;
+}
+
+figure {
+	width: 100%;
+	float: left;
+	border: 2px #ebeaea solid;
+}
+
+/* CASE STUDIES*/
+aside.case-study-sidebar {
+	float:left;
+	width: 300px;
+	padding-right: 5px;
+}
+
+h5 {
+	font-weight: normal;
+	color: #a6a6a6;
+}
+
+div.case-study-images {
+	float: left;
+	width: 600px;
+	padding: 2em;
+}
+
+img.attachment-full.size-full {
+	padding-top: 1em;
+}
+
+/* FOOTER */
+ul.social-media-menu ul{
+	text-align: right;
+}
+ 
+ul.social-media-menu li{
+	display: inline-block;
+	background: #3b3b3b;
+	margin: 0px, 3px;
+	width: 40px;
+	text-align: center;
+	padding: 7px;
+	font-size: 0.6em;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+
+.social-media-menu li a:before{
+	display: inline-block;
+	font-family: 'Fontawesome';
+	font-size: 1.18rem;
+	border-radius: 4em;
+	text-align: center;
+	color: #f1f1f1;
+	background: #3b3b3b;
+}
+
+.social-media-menu li a[href*="facebook.com"]::before{content:'\f39e';}
+.social-media-menu li a[href*="twitter.com"]::before{content:'\f099';}
+.social-media-menu li a[href*="linkedin.com"]::before{content:'\f0e1';}
+
+/* ACCESSABILITY */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
