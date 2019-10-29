@@ -105,7 +105,7 @@ img.attachment-full.size-full {
 }
 
 /* FOOTER */
-ul.social-media-menu ul{
+ul.social-media-menu {
 	text-align: right;
 }
  
@@ -144,4 +144,18 @@ ul.social-media-menu li{
 	width: 1px;
 	overflow: hidden;
 	word-wrap: normal !important;
+}
+
+/* CONTACT PAGE */
+.contact .main-content {
+	width: 80%;
+}
+
+.contact h2{
+size: 1.5em;
+}
+
+#nf-field-4 {
+	background: #45ac9d;
+	float: right;
 }

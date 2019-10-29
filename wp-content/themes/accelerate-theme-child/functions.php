@@ -35,3 +35,11 @@ function create_custom_post_types() {
 }
 add_action ( 'init', 'create_custom_post_types' );
 
+add_filter(
+    'body_class','accelerate_child_body_classes' );
+function accelerate_child_body_classes ($classes ) {
+    if (is_page('contact') ) {
+        $classes[] = 'contact';
+        }
+    return $classes;
+}
