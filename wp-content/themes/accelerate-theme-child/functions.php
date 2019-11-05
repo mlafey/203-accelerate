@@ -19,7 +19,7 @@ function accelerate_child_scripts(){
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
 
-// Add Custom Post - Case Studies
+// ADD CUSTOM POST - CASE STUDIES //
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -32,9 +32,24 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies'),       
         )
     );   
+    
+    register_post_type('service_type',
+        array(
+            'labels' => array(
+                'name'  => __( 'Services' ),
+                'singular_name'  => __( 'Service' ),
+            ),
+            'public'  => true,
+            'has_archive'  => true, 
+            'rewrite' => array( 'slug' => 'service'), 
+        )
+    );
 }
+
 add_action ( 'init', 'create_custom_post_types' );
 
+
+// ADD CLASS FOF CONTACT PAGE //
 add_filter(
     'body_class','accelerate_child_body_classes' );
 function accelerate_child_body_classes ($classes ) {

@@ -147,8 +147,9 @@ ul.social-media-menu li{
 }
 
 /* CONTACT PAGE */
-.contact .main-content {
-	width: 80%;
+.contact .site-content {
+	width: 75%;
+	max-width: 625px;
 }
 
 .contact h2{
@@ -158,4 +159,64 @@ size: 1.5em;
 #nf-field-4 {
 	background: #45ac9d;
 	float: right;
+	height: 50px;
+	width:  200px;
 }
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3  {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/* ABOUT PAGE */
+
+.about .main-content p {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: normal;
+	width: 45%;
+}
+
+.our-services {
+	
+	display: flex;
+  	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+	margin-right:25%;
+	margin-left: 25%;
+	width: 50%;
+}
+	
+ul.about-services {
+	list-style: none;
+}	
+
+.individual-services {
+	max-height: 275px;
+}
+
+.service-details{
+	max-width: 640px;
+	display: inline-block;
+	
+}
+.individual-service-image {
+	border: none;
+	max-width: 315px;
+	margin: 0;
+	display: inline-block;
+	
+}
+
+.contact-section{
+	height: 170px;
+	border-top: 1px #bfbfbf solid;
+}
+
+a.button {
+	float: right;
+	bottom: 20%;
+}
+
+	
