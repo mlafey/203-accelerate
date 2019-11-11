@@ -15,20 +15,21 @@ get_header(); ?>
 			
 	<?php while ( have_posts() ) : the_post(); 
 		$service_image = get_field('service_image');
-		$size = "small";
+		$size = "full";
 	?>
 
-	<article class="services">
-		<aside class="service-sidebar">
-			<h2><?php the_title(); ?></h2>
-			<?php the_content(); ?>
-			<div class="service-image">
+	<section class="services">
+			<aside class="service-sidebar">
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>
+			</aside>
+			
+			<figure class="service-image">
 				<?php if($service_image){
 				echo wp_get_attachment_image( $service_image, $size );
 				} ?>
-			</div>
-		</aside>
-	</article>
+			</figure>
+	</section>
 
 	<?php endwhile; ?>
 
@@ -38,4 +39,3 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
-

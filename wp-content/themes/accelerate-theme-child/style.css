@@ -168,9 +168,26 @@ size: 1.5em;
 	font-weight: normal;
 }
 
+/* SINGLE SERVICE PAGES */
+.services {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+aside.service-sidebar {
+	width: 70%;
+}
+
+figure.service-image {
+	border: none;
+	width: 25%;
+	vertical-align: middle;
+}
+
+
 /* ABOUT PAGE */
 
-.about .main-content p {
+.header-content p {
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: normal;
@@ -178,45 +195,58 @@ size: 1.5em;
 }
 
 .our-services {
-	
 	display: flex;
   	flex-flow: row wrap;
 	justify-content: center;
 	text-align: center;
 	margin-right:25%;
 	margin-left: 25%;
+	margin-bottom: 5%;
 	width: 50%;
 }
-	
-ul.about-services {
+
+.our-services h4 {
+	color: #3b3b3b;
+	margin-top: 0;
+}
+
+.services-container {
 	list-style: none;
+
 }	
 
 .individual-services {
-	max-height: 275px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 300px;
 }
 
-.service-details{
-	max-width: 640px;
-	display: inline-block;
-	
-}
-.individual-service-image {
-	border: none;
-	max-width: 315px;
-	margin: 0;
-	display: inline-block;
-	
+.service-details {
+	width: 70%;
 }
 
-.contact-section{
-	height: 170px;
+.individual-services:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.contact-section {
 	border-top: 1px #bfbfbf solid;
+	display: flex;
+	height: 170px;
+	justify-content: center;
+	align-items: center;
+	align-content: 
 }
 
-a.button {
-	float: right;
-	bottom: 20%;
+
+.contact-section a {
+    display: flex;
+    margin: 2em;
 }
 
-	
+/* THANK YOU */
+.confirmation h1 {
+	color: #45ac9d;
+	text-align: center;	
+}
